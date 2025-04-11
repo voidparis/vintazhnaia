@@ -112,8 +112,8 @@ const Header: React.FC = () => {
               />
             </div>
 
-            {/* Search Bar - Hide on Mobile, improved alignment */}
-            <div className="hidden md:flex items-center justify-center">
+            {/* Search Bar - Visible on all screens */}
+            <div className="flex items-center justify-center">
               <ExpandingSearchBar />
             </div>
           </div>
