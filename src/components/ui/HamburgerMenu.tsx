@@ -19,7 +19,7 @@ export const HamburgerButton: React.FC<HamburgerButtonProps> = ({ isOpen, onClic
       <div className="relative w-5 h-5 flex items-center justify-center">
         <span
           className={`absolute block w-5 sm:w-6 h-[1px] bg-neutral-700 transition-transform duration-300 ease-in-out ${
-            isOpen ? 'transform rotate-45 top-1/2' : 'top-[3px]'
+            isOpen ? 'transform rotate-45 top-1/2' : 'top-0'
           }`}
         />
         <span
@@ -29,7 +29,7 @@ export const HamburgerButton: React.FC<HamburgerButtonProps> = ({ isOpen, onClic
         />
         <span
           className={`absolute block w-5 sm:w-6 h-[1px] bg-neutral-700 transition-transform duration-300 ease-in-out ${
-            isOpen ? 'transform -rotate-45 top-1/2' : 'bottom-[3px]'
+            isOpen ? 'transform -rotate-45 top-1/2' : 'bottom-0'
           }`}
         />
       </div>
