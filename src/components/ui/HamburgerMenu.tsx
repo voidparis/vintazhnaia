@@ -23,12 +23,12 @@ export const HamburgerButton: React.FC<HamburgerButtonProps> = ({ isOpen, onClic
           }`}
         />
         <span
-          className={`absolute block w-6 h-0.5 bg-neutral-700 transition-opacity duration-300 ease-in-out ${
+          className={`absolute block w-5 sm:w-6 h-[1px] bg-neutral-700 transition-opacity duration-300 ease-in-out ${
             isOpen ? 'opacity-0' : 'top-1/2 -translate-y-1/2'
           }`}
         />
         <span
-          className={`absolute block w-6 h-0.5 bg-neutral-700 transition-transform duration-300 ease-in-out ${
+          className={`absolute block w-5 sm:w-6 h-[1px] bg-neutral-700 transition-transform duration-300 ease-in-out ${
             isOpen ? 'transform -rotate-45 top-1/2' : 'bottom-0'
           }`}
         />
