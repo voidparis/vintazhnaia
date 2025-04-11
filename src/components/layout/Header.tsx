@@ -102,7 +102,7 @@ const Header: React.FC = () => {
         {/* Mobile Layout Wrapper */}
         <div className="flex items-center justify-between w-full">
           {/* Left Side: Hamburger and Search */}
-          <div className="flex items-center space-x-2">
+          <div className="flex items-center space-x-1">
             {/* Hamburger Menu Button - Adjusted padding and alignment */}
             <div className="flex items-center justify-center">
               <HamburgerButton
