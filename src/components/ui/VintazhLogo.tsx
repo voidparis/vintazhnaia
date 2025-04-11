@@ -17,13 +17,14 @@ const VintazhLogo: React.FC<VintazhLogoProps> = ({
   };
 
   return (
-    <div className={`text-center ${className}`}>
+    <div className={`flex items-center justify-center h-[40px] ${className}`}>
       <div
         className={`vintazhnaia-logo ${textSizes[size]} text-black tracking-wide whitespace-nowrap`}
         style={{
           fontFamily: 'Georgia, Times New Roman, serif',
           fontWeight: 300,
-          letterSpacing: '0.05em'
+          letterSpacing: '0.05em',
+          lineHeight: 1
         }}
       >
         vintazhnaia

@@ -98,11 +98,11 @@ const Header: React.FC = () => {
         Бесплатная доставка для ювелирных изделий и часов. Исключения распространяются; см. конкретную страницу товара. <Link to="/shipping" className="underline">Купить Сейчас.</Link>
       </div>
 
-      <div className="container mx-auto px-4 py-4 flex items-center">
+      <div className="container mx-auto px-4 py-2 flex items-center">
         {/* Mobile Layout Wrapper */}
         <div className="flex items-center justify-between w-full">
           {/* Left Side: Hamburger and Search */}
-          <div className="flex items-center space-x-3">
+          <div className="flex items-center space-x-2">
             {/* Hamburger Menu Button - Adjusted padding and alignment */}
             <div className="flex items-center justify-center">
               <HamburgerButton
@@ -156,10 +156,10 @@ const Header: React.FC = () => {
 
       {/* Desktop Navigation - Hidden on Mobile */}
       <nav
-        className="hidden lg:flex container mx-auto px-4 py-3 justify-center"
+        className="hidden lg:flex container mx-auto px-4 py-2 justify-center border-t border-neutral-200"
         onMouseLeave={handleMouseLeave}
       >
-        <ul className="flex space-x-8">
+        <ul className="flex space-x-6">
           <li
             className="nav-link relative"
             onMouseEnter={() => handleMouseEnter('newArrivals')}
