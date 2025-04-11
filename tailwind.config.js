@@ -7,25 +7,36 @@ export default {
   theme: {
     extend: {
       colors: {
-        primary: "#000000",
-        secondary: "#fbfafa",
-        accent: "#a28b65",
+        primary: "var(--color-black)",
+        secondary: "var(--color-white)",
+        accent: "var(--color-blue-primary)",
         neutral: {
-          100: "#fbfafa",
+          100: "var(--color-white)",
           200: "#f5f5f5",
           300: "#e5e5e5",
           400: "#cbcac7",
           500: "#a19f96",
           600: "#6c6c6c",
-          700: "#413f3d",
+          700: "var(--color-dark-grey)",
           800: "#2d2d2d",
-          900: "#1a1a1a",
+          900: "var(--color-black)",
         },
-        gold: "#a28b65",
-        bronze: "#925d46",
-        beige: "#cdc1ac",
-        cream: "#c2ad9e",
-        teal: "#6baecf",
+        blue: {
+          light: "var(--color-blue-light)",
+          medium: "var(--color-blue-medium)",
+          primary: "var(--color-blue-primary)",
+          dark: "var(--color-blue-dark)",
+        },
+        purple: {
+          light: "var(--color-purple-light)",
+          medium: "var(--color-purple-medium)",
+          dark: "var(--color-purple-dark)",
+        },
+        pink: {
+          light: "var(--color-pink-light)",
+          medium: "var(--color-pink-medium)",
+          primary: "var(--color-pink-primary)",
+        },
       },
       fontFamily: {
         'cardinal': ['CardinalClassic', 'serif'],

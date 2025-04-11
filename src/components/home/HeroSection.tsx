@@ -24,7 +24,7 @@ const HeroSection: React.FC = () => {
               </p>
               <Link
                 to="/category/watches"
-                className="inline-block bg-[#002FA7] text-white px-6 py-2 hover:bg-[#002088] transition-colors"
+                className="inline-block bg-blue-primary text-white px-6 py-2 hover:bg-blue-dark transition-colors"
               >
                 Посмотреть Коллекцию
               </Link>

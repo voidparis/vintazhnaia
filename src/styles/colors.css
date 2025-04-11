@@ -1,0 +1,23 @@
+
+:root {
+  /* Primary Colors */
+  --color-black: #000000;
+  --color-white: #ffffff;
+  --color-dark-grey: #413f3d;
+  
+  /* Blue Gradient */
+  --color-blue-light: #4cc9f0;
+  --color-blue-medium: #4895ef;
+  --color-blue-primary: #4361ee;
+  --color-blue-dark: #3f37c9;
+  
+  /* Purple Gradient */
+  --color-purple-light: #3a0ca3;
+  --color-purple-medium: #480ca8;
+  --color-purple-dark: #560bad;
+  
+  /* Pink Gradient */
+  --color-pink-light: #7209b7;
+  --color-pink-medium: #b5179e;
+  --color-pink-primary: #f72585;
+}
