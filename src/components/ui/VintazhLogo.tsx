@@ -11,9 +11,9 @@ const VintazhLogo: React.FC<VintazhLogoProps> = ({
 }) => {
   // Define text sizes based on the size prop
   const textSizes = {
-    small: 'text-xl md:text-2xl',
-    medium: 'text-2xl md:text-3xl',
-    large: 'text-3xl md:text-[2.5rem]',
+    small: 'text-2xl md:text-3xl',
+    medium: 'text-3xl md:text-4xl',
+    large: 'text-4xl md:text-[3rem]',
   };
 
   return (
