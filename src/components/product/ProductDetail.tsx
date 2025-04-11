@@ -26,15 +26,15 @@ const ProductDetail: React.FC = () => {
         {/* Breadcrumb Navigation */}
         <div className="mb-6">
           <nav className="flex text-sm overflow-x-auto hide-scrollbar">
-            <a href="/" className="text-neutral-500 hover:text-gold whitespace-nowrap">Home</a>
+            <a href="/" className="text-neutral-500 hover:text-blue-primary whitespace-nowrap">Home</a>
             <span className="mx-2">/</span>
-            <a href="/furniture" className="text-neutral-500 hover:text-gold whitespace-nowrap">Furniture</a>
+            <a href="/furniture" className="text-neutral-500 hover:text-blue-primary whitespace-nowrap">Furniture</a>
             <span className="mx-2">/</span>
-            <a href="/furniture/decorative-objects" className="text-neutral-500 hover:text-gold whitespace-nowrap">Decorative Objects</a>
+            <a href="/furniture/decorative-objects" className="text-neutral-500 hover:text-blue-primary whitespace-nowrap">Decorative Objects</a>
             <span className="mx-2">/</span>
-            <a href="/furniture/decorative-objects/vases-vessels" className="text-neutral-500 hover:text-gold whitespace-nowrap">Vases and Vessels</a>
+            <a href="/furniture/decorative-objects/vases-vessels" className="text-neutral-500 hover:text-blue-primary whitespace-nowrap">Vases and Vessels</a>
             <span className="mx-2">/</span>
-            <a href="/furniture/decorative-objects/vases-vessels/vases" className="text-neutral-500 hover:text-gold whitespace-nowrap">Vases</a>
+            <a href="/furniture/decorative-objects/vases-vessels/vases" className="text-neutral-500 hover:text-blue-primary whitespace-nowrap">Vases</a>
           </nav>
         </div>
 

@@ -66,7 +66,7 @@
   }
 
   .nav-link {
-    @apply uppercase text-sm tracking-wide hover:text-gold transition-colors;
+    @apply uppercase text-sm tracking-wide hover:text-blue-primary transition-colors;
   }
 
   .btn {
