@@ -1,0 +1,214 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: 'CardinalClassic';
+  src: url('/fonts/CardinalClassic/cardinalclshortw-regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'CardinalClassic';
+  src: url('/fonts/CardinalClassic/cardinalclshortw-italic.woff') format('woff');
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
+}
+
+/* Custom TTRamillas-like styling */
+.vintazhnaia-logo {
+  font-family: Georgia, 'Times New Roman', serif;
+  font-weight: 400;
+  letter-spacing: -0.02em;
+  line-height: 1;
+}
+
+@layer base {
+  body {
+    @apply bg-secondary text-neutral-700 font-sans;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-cardinal;
+  }
+
+  /* Add CSS variable for header height */
+  :root {
+    --header-height: 116px;
+    --scroll-padding: 120px;
+  }
+
+  /* Fix for body when mobile menu is open */
+  body.menu-open {
+    overflow: hidden;
+  }
+
+  /* Add scroll padding to ensure items are not hidden behind sticky header */
+  html {
+    scroll-padding-top: var(--scroll-padding);
+  }
+}
+
+@layer components {
+  /* Header icon styling for consistent spacing and alignment */
+  .header-icon-button {
+    @apply flex items-center justify-center p-2 mx-2 relative;
+    height: 40px;
+    width: 40px;
+  }
+
+  /* Ensure all header icons are properly aligned */
+  .header-icon-button svg {
+    @apply absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2;
+  }
+
+  .nav-link {
+    @apply uppercase text-sm tracking-wide hover:text-gold transition-colors;
+  }
+
+  .btn {
+    @apply px-6 py-2 border-[1px] inline-block text-center transition-colors;
+  }
+
+  .btn-primary {
+    @apply btn border-neutral-800 hover:bg-neutral-800 hover:text-white;
+  }
+
+  .btn-secondary {
+    @apply btn border-neutral-400 hover:border-neutral-600;
+  }
+
+  .btn-gold {
+    @apply inline-block bg-amber-700 text-white px-6 py-2 hover:bg-amber-800 transition-colors;
+  }
+
+  .product-card {
+    @apply relative flex flex-col h-full;
+  }
+
+  .product-image {
+    @apply relative overflow-hidden bg-neutral-100;
+  }
+
+  .product-info {
+    @apply mt-2 flex flex-col;
+  }
+
+  .favorite-btn {
+    @apply absolute top-2 right-2 w-8 h-8 flex items-center justify-center rounded-full bg-white bg-opacity-70 hover:bg-opacity-100 transition-all;
+  }
+
+  /* Featured section styling */
+  .featured-section {
+    @apply relative overflow-hidden bg-neutral-100 rounded-sm h-[300px];
+  }
+
+  .featured-content {
+    @apply p-8 flex flex-col h-full z-10 relative;
+  }
+
+  .featured-text {
+    @apply text-neutral-600 mb-4 max-w-[60%];
+  }
+
+  .featured-image-container {
+    @apply absolute right-0 bottom-0 top-0 w-[45%] overflow-hidden;
+  }
+
+  /* New PromoCard component styling */
+  .promo-card {
+    @apply flex flex-row bg-neutral-100 rounded-sm h-[300px] overflow-hidden;
+  }
+
+  .promo-card-content {
+    @apply w-1/2 p-10 flex flex-col h-full;
+  }
+
+  .promo-card-image {
+    @apply w-1/2 h-full overflow-hidden;
+  }
+
+  /* Mobile Menu Styling */
+  .header-menu-open {
+    @apply shadow-md;
+  }
+
+  /* Add an overlay when mobile menu is open */
+  .header-menu-open::after {
+    content: '';
+    position: fixed;
+    top: var(--header-height);
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 40;
+    pointer-events: auto;
+    opacity: 0;
+    animation: fadeIn 0.3s ease forwards;
+  }
+
+  /* Ensure the mobile menu is above the overlay */
+  .header-menu-open ~ div {
+    position: relative;
+    z-index: 60;
+  }
+
+  /* Header scrolling behavior */
+  .header-scrolled {
+    @apply transition-transform duration-300;
+  }
+
+  /* Style for a sticky header that appears when scrolling down */
+  header[data-scrolling-down="true"] {
+    @apply transition-all duration-300;
+  }
+
+  /* Compact header styles when scrolling down */
+  header[data-scrolling-down="true"] .container {
+    @apply py-2 transition-all duration-300;
+  }
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+}
+
+@layer utilities {
+  .hide-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+
+  .hide-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+
+  .line-clamp-1 {
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+  }
+
+  .line-clamp-2 {
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+  }
+
+  .line-clamp-3 {
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+  }
+}
