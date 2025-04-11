@@ -81,7 +81,7 @@
   }
 
   .btn-gold {
-    @apply inline-block bg-amber-700 text-white px-6 py-2 hover:bg-amber-800 transition-colors;
+    @apply inline-block bg-[#002FA7] text-white px-6 py-2 hover:bg-[#002088] transition-colors;
   }
 
   .product-card {
