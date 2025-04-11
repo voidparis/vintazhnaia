@@ -188,12 +188,11 @@ const ExpandingSearchBar: React.FC = () => {
         <button
           type="button"
           onClick={handleSearchIconClick}
-          className="absolute flex items-center justify-center p-2 cursor-pointer outline-none border-none z-10"
+          className="absolute flex items-center justify-center cursor-pointer outline-none border-none z-10"
           style={{
             right: isExpanded ? '5px' : '50%',
             transform: isExpanded ? 'none' : 'translateX(50%)',
-            width: '30px',
-            height: '30px'
+            padding: '2px'
           }}
         >
           <svg
