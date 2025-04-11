@@ -54,7 +54,7 @@
 @layer components {
   /* Header icon styling for consistent spacing and alignment */
   .header-icon-button {
-    @apply flex items-center justify-center p-2 mx-[-4px] relative;
+    @apply flex items-center justify-center p-[18px] mx-[-4px] relative;
     height: 40px;
     width: 40px;
   }
