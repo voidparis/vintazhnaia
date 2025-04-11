@@ -11,12 +11,12 @@ interface HamburgerButtonProps {
 export const HamburgerButton: React.FC<HamburgerButtonProps> = ({ isOpen, onClick, className = '' }) => {
   return (
     <button
-      className={`flex flex-col justify-center items-center lg:hidden focus:outline-none ${className}`}
+      className={`header-icon-button lg:hidden focus:outline-none ${className}`}
       onClick={onClick}
       aria-label={isOpen ? 'Закрыть меню' : 'Открыть меню'}
       aria-expanded={isOpen}
       >
-      <div className="relative w-5 h-5 sm:w-6 sm:h-6">
+      <div className="relative w-5 h-5 sm:w-6 sm:h-6 flex items-center justify-center">
         <span
           className={`absolute block w-5 sm:w-6 h-[1px] bg-neutral-700 transition-transform duration-300 ease-in-out ${
             isOpen ? 'transform rotate-45 top-1/2' : 'top-0'
